@@ -18,16 +18,16 @@ Installs and configure Kodi media center (formely known as XBMC).
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['kodi']['packages']</tt></td>
-    <td>Array of string</td>
-    <td>List of OS packages</td>
-    <td><tt>software-properies-common</tt></td>
+    <td><tt>['kodi']['packages']['required']</tt></td>
+    <td>Mash</td>
+    <td>List of OS packages required to install Kodi</td>
+    <td><tt>e.g. software-properies-common</tt></td>
   </tr>
   <tr>
-    <td><tt>['kodi']['apt']i['repositories']</tt></td>
-    <td>Array of string</td>
-    <td>List of URI for apt repositories</td>
-    <td><tt>ppa:team-xbmc/unstable</tt></td>
+    <td><tt>['kodi']['apt']['repositories']</tt></td>
+    <td>Mash</td>
+    <td>List apt repositories to be used to install and configure Kodi</td>
+    <td><tt>e.g. ppa:team-xbmc/unstable</tt></td>
   </tr>
 </table>
 
@@ -47,4 +47,4 @@ Include `kodi` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: YOUR_NAME (<YOUR_EMAIL>)
+Author:: Jeremy Baumont (<jeremy.baumont@gmail.com>)
